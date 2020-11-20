@@ -168,10 +168,10 @@ class Experiment(object):
         if 'path_to_transcriptome' in dic.keys() and 'projectname' in dic.keys():
             projectname = dic['projectname'].split(',')
             transcriptome_data = TranscriptomeDataset.from_saved_file(
-                dic['path_to_transcriptome'], projectname, genes)
+                dic['path_to_transcriptome'], projectname=projectname, genes=genes)
         elif 'path_to_transcriptome' in dic.keys():
             transcriptome_data = TranscriptomeDataset.from_saved_file(
-                dic['path_to_transcriptome'], genes)
+                dic['path_to_transcriptome'], genes=genes)
         elif 'projectname' in dic.keys():
             projectname = dic['projectname'].split(',')
             transcriptome_data = TranscriptomeDataset(projectname, genes)
