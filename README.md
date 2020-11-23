@@ -17,7 +17,11 @@ NOTE: code was run with python 3.7.4
 
 ## Data collection and preprocessing
 
-To ensure reproducibility of the results, coordinates of the tiles used in the paper (necessary to extract tile images and features from whole-slide images) are provided in the archive tile_coordinates.gz. To uncompress it, run
+To ensure reproducibility of the results, coordinates of the tiles used in the paper (necessary to extract tile images and features from whole-slide images) are provided in the archive tile_coordinates.gz.
+
+EDIT: due to an issue related to data quota, file tile_coordinates.gz should be downloaded instead from https://drive.google.com/file/d/1PJsUv1SQieJs7hqtWOqW68v1K9c-mIF6/view?usp=sharing.
+
+To uncompress it, run
 ```bash
 tar -xzvf tile_coordinates.gz
 ```
@@ -26,7 +30,10 @@ Splits used in the paper are also provided in patient_splits.pkl.
 ### TCGA
 
 We originally downloaded the whole-slide images from the TCGA data portal https://portal.gdc.cancer.gov/ via the gdc-client tool. To access all of TCGA data used in this work, follow the steps described below.
-First, create a folder to store data
+First, create a folder to store data.
+```bash
+mkdir data
+```
 Paths to folders containing slides, tile features and RNAseq data should be consistent with the contant of file constant.py. If data is saved in a different location, constant.py has to be modified accordingly, as well as the example config files.
 
 #### Download TCGA slides
