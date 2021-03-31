@@ -24,7 +24,7 @@ Keras==2.2.4
 Keras-Applications==1.0.6
 Keras-Preprocessing==1.0.5
 git+https://github.com/src-d/kmcuda.git#subdirectory=src
-lxml==4.4.2
+lxml==4.6.3
 matplotlib==3.1.1
 mygene==3.0.0
 ndg-httpsclient==0.5.0
