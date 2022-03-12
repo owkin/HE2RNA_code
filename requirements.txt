@@ -33,7 +33,7 @@ numpy==1.17.0
 openslide-python==1.1.1
 pandas==0.23.4
 pathlib==1.0.1
-Pillow==6.1.0
+Pillow==9.0.1
 progressbar2==3.43.1
 pyasn1==0.4.3
 pyOpenSSL==18.0.0
