@@ -48,7 +48,7 @@ tables==3.5.2
 tensorboard==1.14.0
 tensorboardX==1.4
 tensorflow-estimator==1.14.0
-tensorflow-gpu==1.14.0
+tensorflow-gpu==2.7.2
 termcolor==1.1.0
 torch==1.4.0
 torchvision==0.5.0
